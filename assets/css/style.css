@@ -1,0 +1,227 @@
+/* GENERAL */
+body{
+    background-color: white;
+    font-family: TS-Med, sans-serif;
+}
+.container{
+    width: 1135px;
+    border: 1px solid;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header{
+background-color: white;
+  height: 75px;
+  font-family: TS-Reg, sans-serif;
+  width: 100%;
+}
+header img{
+    width: 200px;
+    /*border: 1px solid black;*/
+    object-fit: cover;
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+    align-self: center;
+}
+header .container {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header nav{
+    /* border: 3px solid red; */
+    padding: 10px 15px;
+    
+}
+header nav>span {
+    border-radius: 20px;
+    padding: 10px;
+}
+header nav>span:hover{
+    background-color: lightgray;
+    cursor: pointer;
+  }
+header button {
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    margin-left: 5px;
+    width: 150px;
+  }
+
+  header button:hover{
+    background-color: lightgray;
+    cursor: pointer;
+  }
+
+/* MAIN  */
+
+h1 {
+   color: black;
+   font-family: inherit;
+   font-size: 54px;
+   margin-top: 40px;
+   font-weight: inherit;
+}
+h1 scan:nth-child(2){
+    color: #FF5E5E ;
+    font-family: inherit;
+    font-size: 54px;
+    margin-top: 40px;
+    font-weight: inherit;
+}
+h1 + p {
+    font-size: 15px;
+    font-family: TS-Reg, sans-serif;
+    color: grey;
+    margin-bottom: 30px;
+}
+h1 + p a {
+    text-decoration: underline;
+    font-weight: normal;
+}
+.navigation {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 26px;
+  }
+.navigation > div {
+    display: flex;
+    justify-content: space-between;
+    width: calc((100% - 50px) / 6);
+    border: solid black;
+    padding: 12px 15px;
+    border-radius: 14px;
+  }  
+.navigation > div:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+.pictures {
+    height: 430px;
+    display: flex;
+  }  
+.pictures img {
+    object-fit: cover;
+  }  
+.pictures > .colonne1 {
+    position: relative;
+    flex: 1;
+    margin-right: 2px;
+  }  
+.pictures > .colonne1 img {
+    height: 100%;
+    width: 100%;
+  }  
+.pictures > .colonne2 {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+  }  
+.pictures > .colonne2 img {
+    height: calc(50% - 1px);
+  } 
+.pictures > .colonne2 img:first-child {
+    margin-bottom: 2px;
+  }
+.menu {
+    font-family: TS-Med, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 20px 0 40px 0;
+  }
+.menu {
+    display: flex;
+  }
+.menu > div {
+    display: flex;
+    align-items: center;
+  }
+.menu {
+    justify-content: space-between;
+  }
+.menu > div > div {
+    cursor: pointer;
+  }
+.menu i {
+    margin: 0 5px;
+  }
+.menu > div:last-child span:nth-child(2) {
+    margin: 0 2px;
+  }
+.menu > div:first-child span:hover,
+.menu > div:first-child > div:hover {
+    cursor: pointer;
+    color: grey
+  }
+.menu > div:first-child span:hover {
+    text-decoration: underline;
+  }  
+.description {
+    display: flex;
+    margin-bottom: 80px;
+}  
+.description .colonne1 {
+    width: 50%;
+}
+.description .colonne1 h2 {
+    font-size: 25px;
+    font-family: inherit;
+}
+.description .colonne1 p {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 12px;
+    color: grey;
+}
+.description .colonne2 {
+    width: calc(50% - 120px);
+    margin-left: 120px;
+  }
+.description h3 {
+    font-size: 20px;
+}
+.description .colonne2 div:first-child {
+    padding: 32px;
+    border-radius: 16px 16px 0 0;
+    background-color: #FF5E5E ;
+  } 
+.description .colonne2 p {
+    font-family: TS-Reg, sans-serif;
+    margin-bottom: 24px;
+  }
+.description .colonne2 div:last-child {
+    height: 190px;
+    background-image: url(../img/carte.png);
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    border-radius: 0 0 16px 16px;
+  }
+.description button {
+    height: 54px;
+    width: 154px;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    background-color: black;
+    color: white;
+    border-radius: 14px;
+  }
+.description button:hover {
+    background-color: black;
+    cursor: pointer;
+  }
+  

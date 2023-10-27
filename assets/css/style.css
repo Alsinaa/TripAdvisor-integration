@@ -5,7 +5,7 @@ body{
 }
 .container{
     width: 1135px;
-    border: 1px solid;
+    /* border: 1px solid; */
     height: 100%;
     margin: 0 auto;
 }
@@ -171,6 +171,7 @@ h1 + p a {
 .description {
     display: flex;
     margin-bottom: 80px;
+    /* border: 2px solid red; */
 }  
 .description .colonne1 {
     width: 50%;
@@ -203,7 +204,7 @@ h1 + p a {
   }
 .description .colonne2 div:last-child {
     height: 190px;
-    background-image: url(../img/carte.png);
+    background-image: url(../img/maps_cnuhsr.png);
     background-position: center;
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -216,7 +217,7 @@ h1 + p a {
     font-size: inherit;
     font-family: inherit;
     line-height: inherit;
-    background-color: black;
+    background-color: rgb(29, 27, 27);
     color: white;
     border-radius: 14px;
   }
@@ -224,4 +225,242 @@ h1 + p a {
     background-color: black;
     cursor: pointer;
   }
+
+   /* <!------- 1ERE SECTION  -------> */
+ 
+.section1 h2 {
+  /* border: 2px solid blue; */
+  margin-top: 50px;
+  font-size: 28px;
+  padding: 28px 0;
+}
+.section1 > div {
+  display: flex;
+  margin-bottom: 40px;
+  /* border: 3px solid palevioletred; */
+}
+
+.section1 .colonne1 {
+  flex: 1;
+  padding-right: 30px;
+}
+.section1 .colonne1 h4 {
+  font-size: 25px;
+}
+.section1 .colonne1 p {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 22px;
+  margin: 20px 0;
+}
+
+.section1 .colonne1 a {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: inherit;
+  color: gray;
+  text-decoration: underline;
+}
+.section1 .colonne2 {
+  flex: 3;
+  display: flex;
+  gap: 15px;
+  overflow: scroll hidden;
+}
+/* caroussel */
+.section1 .carrousel {
+  width: calc((100% - 30px) / 3);
+  flex-shrink: 0;
+  /* border: 2px solid orangered; */
+}
+
+.section1 .carrousel:hover {
+  cursor: pointer;
+}
+
+.section1 .carrousel:hover h5 {
+  text-decoration: underline;
+}
+
+.section1 .carrousel:hover img {
+opacity: 0.8;
+}
+
+.section1 .carrousel img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.section1 .carrousel span {
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 8px;
+}
+
+.section1 .carrousel p {
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.section1 .carrousel .notes {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.section1 .carrousel .notes i {
+  color: green;
+  font-size: 14px;
+}
+.section1 .carrousel > div:first-child {
+  position: relative;
+}
+.section1 .circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+}
+
+.section1 .circle:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.section1 .badge {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+  /* border: 2px solid saddlebrown; */
+}
+
+.section1 .badge span {
+  font-size: 10px;
+  margin: 0;
+  font-weight: bold;
+  font-family: TS-Med, sans-serif;
+  /* border: 2px solid yellowgreen; */
+}
+.section1 .badge i {
+  font-size: 25px;
+  /* border: 2px solid orangered; */
+}
+  /* <!------- 2EME SECTION  -------> */
+  .section2 h2 {
+    /* border: 2px solid blue; */
+    margin-top: 50px;
+    font-size: 28px;
+    padding: 28px 0;
+  }
+  .section2 p {
+    font-size: 20px;
+    font-family: inherit;
+    line-height: 20px;
+    margin: 20px 0;
+  }
+  .section2 > div {
+    display: flex;
+    margin-bottom: 40px;
+    /* border: 3px solid palegreen; */
+  }
+  .section2 .carrousel {
+    /* border: 2px solid palevioletred; */
+    display: flex;
+    overflow: scroll;
+  } 
   
+ .section2 .carrousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .section2 .picture {
+    /* border: 2px solid goldenrod; */
+    width: calc((100% - 30px) / 3);
+    flex-shrink: 0;
+  }
+  
+  .section2 .picture:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .section2 .picture > img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 6px;
+  }
+  
+  .section2 .picture > p {
+    font-family: inherit;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  
+  .section2 .picture > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .section2 .picture > div > img {
+    height: 24px;
+    margin-right: 6px;
+    border-radius: 50%;
+  }
+  
+  .section2 .picture > div span:nth-child(2) {
+    font-family: inherit;
+  }
+
+  .section2 .carrousel span {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 8px;
+  }
+  
+  .section2 .carrousel p {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  
+  .section2 .carrousel .notes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  
+  .section2 .carrousel .notes i {
+    color: green;
+    font-size: 14px;
+  }  
+
+
+   /* <!------- FOOTER  ------->  */
+   footer {
+    /* border: 2px solid plum; */
+    height: 156px;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 50px;
+  }
+  
+  footer img {
+    width: 40px;
+    margin-right: 10px;
+  }
